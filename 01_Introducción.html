@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Introducción a las IDEs</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./02_inspire.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="resources/css/styles.css">
+</head>
+
+<body class="nav-sidebar floating slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_Introducción.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a las IDEs</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reconocimiento y atribución</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_Introducción.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a las IDEs</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_inspire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">INSPIRE</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_estandares_OGC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estándares OGC</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_wms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">WMS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_wmts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">WMTS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_wfs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">WFS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_gml.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">GML</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_sos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">SOS</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10_metadatos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Metadatos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11_clientes_de_mapa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Clientes de mapas</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12_servidores_de_mapa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Servidores de mapas</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#antecedentes" id="toc-antecedentes" class="nav-link active" data-scroll-target="#antecedentes"><span class="header-section-number">1.1</span> Antecedentes</a></li>
+  <li><a href="#qué-es-una-ide" id="toc-qué-es-una-ide" class="nav-link" data-scroll-target="#qué-es-una-ide"><span class="header-section-number">1.2</span> ¿Qué es una IDE?</a>
+  <ul class="collapse">
+  <li><a href="#comparación-con-infraestructuras-físicas" id="toc-comparación-con-infraestructuras-físicas" class="nav-link" data-scroll-target="#comparación-con-infraestructuras-físicas"><span class="header-section-number">1.2.1</span> Comparación con infraestructuras físicas</a></li>
+  </ul></li>
+  <li><a href="#componentes-de-una-ide" id="toc-componentes-de-una-ide" class="nav-link" data-scroll-target="#componentes-de-una-ide"><span class="header-section-number">1.3</span> Componentes de una IDE</a>
+  <ul class="collapse">
+  <li><a href="#marco-institucional" id="toc-marco-institucional" class="nav-link" data-scroll-target="#marco-institucional"><span class="header-section-number">1.3.1</span> Marco institucional</a></li>
+  <li><a href="#datos-y-metadatos" id="toc-datos-y-metadatos" class="nav-link" data-scroll-target="#datos-y-metadatos"><span class="header-section-number">1.3.2</span> Datos y metadatos</a></li>
+  <li><a href="#servicios-de-visualización-y-acceso-a-datos" id="toc-servicios-de-visualización-y-acceso-a-datos" class="nav-link" data-scroll-target="#servicios-de-visualización-y-acceso-a-datos"><span class="header-section-number">1.3.3</span> Servicios de visualización y acceso a datos</a></li>
+  <li><a href="#usuarios-y-colaboradores" id="toc-usuarios-y-colaboradores" class="nav-link" data-scroll-target="#usuarios-y-colaboradores"><span class="header-section-number">1.3.4</span> Usuarios y colaboradores</a></li>
+  <li><a href="#estándares" id="toc-estándares" class="nav-link" data-scroll-target="#estándares"><span class="header-section-number">1.3.5</span> Estándares</a></li>
+  </ul></li>
+  <li><a href="#principios-en-que-se-basa-el-desarrollo-de-una-ide" id="toc-principios-en-que-se-basa-el-desarrollo-de-una-ide" class="nav-link" data-scroll-target="#principios-en-que-se-basa-el-desarrollo-de-una-ide"><span class="header-section-number">1.4</span> Principios en que se basa el desarrollo de una IDE</a>
+  <ul class="collapse">
+  <li><a href="#orientar-su-arquitectura-a-servicios-soa" id="toc-orientar-su-arquitectura-a-servicios-soa" class="nav-link" data-scroll-target="#orientar-su-arquitectura-a-servicios-soa"><span class="header-section-number">1.4.1</span> Orientar su arquitectura a servicios (SOA)</a></li>
+  <li><a href="#implementar-aplicaciones-para-descubrir-visualizar-y-procesar-información" id="toc-implementar-aplicaciones-para-descubrir-visualizar-y-procesar-información" class="nav-link" data-scroll-target="#implementar-aplicaciones-para-descubrir-visualizar-y-procesar-información"><span class="header-section-number">1.4.2</span> Implementar aplicaciones para descubrir, visualizar y procesar información</a></li>
+  <li><a href="#adoptar-estándares-de-interoperabilidad-geoespacial" id="toc-adoptar-estándares-de-interoperabilidad-geoespacial" class="nav-link" data-scroll-target="#adoptar-estándares-de-interoperabilidad-geoespacial"><span class="header-section-number">1.4.3</span> Adoptar estándares de interoperabilidad geoespacial</a></li>
+  </ul></li>
+  <li><a href="#la-utilidad-de-las-ide-y-sus-ventajas" id="toc-la-utilidad-de-las-ide-y-sus-ventajas" class="nav-link" data-scroll-target="#la-utilidad-de-las-ide-y-sus-ventajas"><span class="header-section-number">1.5</span> La utilidad de las IDE y sus ventajas</a></li>
+  <li><a href="#tareas-que-permite-una-ide" id="toc-tareas-que-permite-una-ide" class="nav-link" data-scroll-target="#tareas-que-permite-una-ide"><span class="header-section-number">1.6</span> Tareas que permite una IDE</a></li>
+  <li><a href="#niveles-de-desarrollo-de-una-ide" id="toc-niveles-de-desarrollo-de-una-ide" class="nav-link" data-scroll-target="#niveles-de-desarrollo-de-una-ide"><span class="header-section-number">1.7</span> Niveles de desarrollo de una IDE</a></li>
+  <li><a href="#futuro-de-las-ides" id="toc-futuro-de-las-ides" class="nav-link" data-scroll-target="#futuro-de-las-ides"><span class="header-section-number">2</span> Futuro de las IDEs</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a las IDEs</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Tradicionalmente, la obtención de información geográfica se ha caracterizado por una serie de dificultades como los formatos diversos, el coste de adquisición de los datos, o simplemnete dónde encontrar o cómo accedera a la información.</p>
+<p>El desarrollo de tecnologías de la información y la mejora de las comunicaciones ha permitido superar estos obstáculos y facilitar el acceso tanto a la información del sector público como privado, amparándose en políticas de consenso y en un marco legal establecido. Todo esto, junto al auge de las tecnologías abiertas, han facilitado enormemente la búsqueda, acceso e intercambio de información.</p>
+<p>La información geográfica es generada principalmente en el sector público (se estima que entre un 80 y un 90% de la información geográfica es generada por administraciones públicas). El desconocimiento de la información disponible hace que los datos puedan ser generados repetidamente por diferentes administraciones, aumentando innecesariamente el coste de los proyectos y multiplicando innecesariamente el esfuerzo y la inversión.</p>
+<section id="antecedentes" class="level2 page-columns page-full" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="antecedentes"><span class="header-section-number">1.1</span> Antecedentes</h2>
+<p>En 1987, el comité Chorley, del Departamento de Medioambiente de Estados Unidos, concluyó que <em>“las barreras políticas e institucionales que restringen actualmente el uso de los SIG deben ser superadas. Esto incluye problemas de incompatibilidad por diferencias de definición y formatos, así como restricciones al acceso y adquisición de los propios datos.”</em></p>
+<p>En la conferencia de las Naciones Unidas sobre medio ambiente y desarrollo que tuvo lugar en Río de Janeiro en 1992, uno de los temas más relevantes fue el papel de la información geográfica para tratar los problemas ambientales, la cooperación internacional y el desarrollo. Quedó claro en aquel momento que establecer mecanismos para afrontar esos problemas pasaba necesariamente por implementar formas que permitieran aprovechar mejor la información geográfica y lograr una mayor coordinación entre las organizaciones estatales encargadas de su manejo <span class="citation" data-cites="olaya">[@olaya]</span>.</p>
+<div class="cell column-screen">
+
+</div>
+<p>El concepto IDE nace en los años noventa como una iniciativa política en Estados Unidos para garantizar la interoperabilidad entre la información geográfica generada por las diferentes agencias federales.</p>
+<p>La primera IDE se implantó a mediados de los 90, cuando EEUU inició el desarrollo de herramientas de acceso a datos, precursoras de las IDE Nacionales, para coordinar el desarrollo, uso, intercambio y la difusión de la cartografía topográfica y los datos espaciales relacionados.</p>
+<p>En 1994, Bill Clinton aprobó la Orden Ejecutiva 12906 donde declaraba:</p>
+<blockquote class="blockquote">
+<p><em>“La información geográfica es vital para promover el desarrollo económico, aprovechar nuestros recursos naturales y proteger el medio ambiente. La tecnología moderna permite mejorar la adquisición, distribución y utilización de datos geográficos y cartográficos. La Revisión del Desarrollo Nacional ha recomendado que la rama ejecutiva desarrolle, en cooperación con los estados, los gobiernos locales y el sector privado, una Infraestructura Nacional de Datos Espaciales para apoyar las aplicaciones de los datos geoespaciales en el sector público y privado, en áreas como el transporte, el desarrollo comunitario, la agricultura, la atención de emergencias, la gestión ambiental y la tecnología de información”.</em></p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cronología clave
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>1987</strong>: Conclusiones del comité Chorley</li>
+<li><strong>1992</strong>: Conferencia de la ONU en Río de Janeiro</li>
+<li><strong>1994</strong>: Orden Ejecutiva 12906 de Bill Clinton</li>
+<li><strong>1996</strong>: 1ª Conferencia Internacional del GSDI</li>
+<li><strong>2000</strong>: Rediseño de IDEs de primera generación</li>
+<li><strong>2002</strong>: 120 países habían iniciado proyectos IDE</li>
+<li><strong>2004</strong>: Consolidación tras la constitución formal de la GSDI</li>
+</ul>
+</div>
+</div>
+</div>
+<p>En 1996 se celebra la 1ª Conferencia Internacional del GSDI (Global Spatial Data Infrastructure).</p>
+<p>Otros países iniciaron los primeros pasos con los mismos objetivos. Los países que habían implementado IDE de primera generación se replantearon la iniciativa y la fueron actualizando y modificando, adaptándola a las necesidades del momento (alrededor del año 2000). Esto trajo un rápido incremento de nuevos países que se implicaron en el proceso de creación de infraestructuras de datos (el año 2002, 120 países habían iniciado proyectos IDE) y la aparición de una comunidad IDE, en la cual se podían compartir e intercambiar experiencias.</p>
+<p>En 2004 se consolida tras la constitución formal de la GSDI.</p>
+</section>
+<section id="qué-es-una-ide" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="qué-es-una-ide"><span class="header-section-number">1.2</span> ¿Qué es una IDE?</h2>
+<p>Existen varias definiciones para describir IDE, pero una de las más utilizadas y extendidas es la elaborada por la Federal Geographic Data Committee (FGDC) que la define como:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definición FGDC
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Una Infraestructura de Datos Espaciales (IDE) se puede definir como un conjunto de tecnologías, políticas, estándares y recursos humanos necesarios para adquirir, procesar, almacenar, distribuir y mejorar la utilización de la información geográfica.</em></p>
+</div>
+</div>
+<p>Una IDE (Infraestructura de Datos Espaciales) es un sistema informático integrado por un conjunto de recursos (catálogos, servidores, programas, datos, aplicaciones, páginas Web,…) dedicados a gestionar información geográfica disponible en Internet, que cumpla una serie de condiciones de interoperabilidad <span class="citation" data-cites="miteco">[@miteco]</span>.</p>
+<p>A partir de estas definiciones podemos entender que una IDE no es solo una implementación tecnológica sino que son sistemas integrados de datos, tecnologías y políticas diseñados para facilitar el acceso, uso y gestión de la información geoespacial <a href="#fig-esquema" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>; comprende una parte muy importante de comunicación, entre personas, instituciones, empresas, etc. para establecer los marcos de colaboración para compartir, describir y acceder a los datos geográficos. A diferencia de un sistema de información geográfica (SIG) que se centra en la gestión de datos espaciales a nivel organizativo o local, una IDE permite compartir datos espaciales entre múltiples organismos, instituciones y el público en general, promoviendo la interoperabilidad y el acceso abierto a la información.</p>
+<p>Su <strong>objetivo principal</strong> es permitir que los datos espaciales estén accesibles para diferentes usuarios (gobiernos, empresas, academia, ciudadanos) de manera eficaz y eficiente.</p>
+<div id="fig-esquema" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-esquema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/esquema_ides.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-esquema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Estructura y componentes de una IDE
+</figcaption>
+</figure>
+</div>
+<section id="comparación-con-infraestructuras-físicas" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="comparación-con-infraestructuras-físicas"><span class="header-section-number">1.2.1</span> Comparación con infraestructuras físicas</h3>
+<p>Conceptualmente, las Infraestructuras de datos tienen la misma finalidad que las carreteras y las autopistas: mejorar la comunicación, facilitar el acceso, incrementar el comercio, etc.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Infraestructura de tránsito</th>
+<th>Infraestructura de datos espaciales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Objetivos: mejorar la accesibilidad y el uso de los coches</td>
+<td>Objetivos: mejorar el acceso, el uso de la Geoinformación y evitar duplicaciones de datos</td>
+</tr>
+<tr class="even">
+<td>Red de transporte (carreteras, caminos, puentes, etc.)</td>
+<td>Internet</td>
+</tr>
+<tr class="odd">
+<td>Vehículos</td>
+<td>Datos</td>
+</tr>
+<tr class="even">
+<td>Ayudas: mapas, carteles, señales</td>
+<td>Catálogos (datos y servicios)</td>
+</tr>
+<tr class="odd">
+<td>Conductores</td>
+<td>Usuarios</td>
+</tr>
+<tr class="even">
+<td>Taller / Garaje (Servicios)</td>
+<td>Webservices (geoservicios)</td>
+</tr>
+<tr class="odd">
+<td>Parking</td>
+<td>Almacén de geodatos de los proveedores</td>
+</tr>
+<tr class="even">
+<td>Fabricante de coches</td>
+<td>Proveedores de datos y servicios</td>
+</tr>
+<tr class="odd">
+<td>Código de circulación</td>
+<td>Estándares</td>
+</tr>
+<tr class="even">
+<td>Regulación tránsito</td>
+<td>Política + Legislación</td>
+</tr>
+<tr class="odd">
+<td>Política (Centro de control de tránsito)</td>
+<td>Marco institucional (Centro de Geodatos)</td>
+</tr>
+</tbody>
+</table>
+<p>Una buena infraestructura viaria proporciona una mejor accesibilidad, de lo que se deriva una mejor comunicación entre regiones y, por tanto, un incremento del comercio. Esta es precisamente, la finalidad de las IDE: facilitar el acceso y el uso de la información geográfica y fomentar su comercio.</p>
+</section>
+</section>
+<section id="componentes-de-una-ide" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="componentes-de-una-ide"><span class="header-section-number">1.3</span> Componentes de una IDE</h2>
+<p>Una IDE está compuesta de 5 elementos fundamentales (<a href="#fig-componentes" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>):</p>
+<div id="fig-componentes" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-componentes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/componentes_ides.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-componentes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Componentes de una IDE
+</figcaption>
+</figure>
+</div>
+<section id="marco-institucional" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="marco-institucional"><span class="header-section-number">1.3.1</span> Marco institucional</h3>
+<p>Para que una IDE pueda prosperar tiene que contar con un soporte institucional firme que se encarge de su puesta en marcha y garantice su impulso inicial. Este soporte se tiene que plasmar en un marco legal adecuado, que anime a las diferentes administraciones públicas o entidades a participar en las actividades de la IDE.</p>
+<p>Por ejemplo la Directiva 2007/2/CE por la que se establece una Infraestructura de Información Espacial en la Comunidad Europea (INSPIRE; <span class="citation" data-cites="inspire">[@inspire]</span>) y la Ley 14/2010, de 5 de julio, sobre las infraestructuras y los servicios de información geográfica en España (LISIGE; <span class="citation" data-cites="lisige">[@lisige]</span>) se han elaborado de forma participativa. Estos marcos legales cumplen la función de consolidar las reglas acordadas por la comunidad para dar seguridad jurídica y sostenibilidad al proyecto. Debe ser un marco jurídico mínimo necesario para que se desarrollen con garantías las IDEs haciendo que no todo dependa de la buena voluntad de las partes implicadas.</p>
+</section>
+<section id="datos-y-metadatos" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="datos-y-metadatos"><span class="header-section-number">1.3.2</span> Datos y metadatos</h3>
+<p>Cualquier tipo de dato que de forma directa o indirecta haga referencia a una localización se podría considerar como dato geográfico. Las administraciones públicas son las propietarias de la mayoría de la información geográfica de referencia. Las IDE son el canal mediante el cual pueden distribuir de manera eficaz la información geográfica.</p>
+<p>No obstante los datos, por sí solos, no aportan información. Dicho de otro modo, los datos se pueden convertir en información a través de un procesamiento que les añada valor en contexto de aplicación apropiado. Por este motivo, es necesario evaluar la adecuación de los datos al problema o tarea a abordar, para lo que es indispensable su descripción. Los <strong>metadatos</strong>, cumplen este propósito, describiendo el contenido y las características de los datos (o servicios), aportando una información muy valiosa que ayuda a “<em>contextualizar</em>” el dato, y en ocasiones, facilitar su acceso. Estos metadatos tienen que ser:</p>
+<ul>
+<li>Almacenados en un <em>Catálogo</em> accesible</li>
+<li>Consultables para cualquier usuario</li>
+<li>Descritos según estándares que aportan las pautas de cómo y qué información hay que dar en cada caso</li>
+</ul>
+</section>
+<section id="servicios-de-visualización-y-acceso-a-datos" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="servicios-de-visualización-y-acceso-a-datos"><span class="header-section-number">1.3.3</span> Servicios de visualización y acceso a datos</h3>
+<p>El intercambio de información y la interoperabilidad de los sistemas son dos conceptos clave en una IDE. Ambos se pueden conseguir gracias a los estándares y los geoservicios. OGC ha desarrollado una serie de especificaciones estándar que permiten a dos sistemas diferentes, con arquitecturas y formatos de datos diversos combinar cartografía sin ningún esfuerzo por parte del usuario.</p>
+<p>Para facilitar la visualización y el acceso a los datos, los encargados del desarrollo de la IDE generalmente implementan un <em>Geoportal</em> que incluye entre otras cosas:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Servicios básicos</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Servicios avanzados</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li>Metadatos (descripción del contenido, la calidad y otras características de los datos)</li>
+<li>Catálogo (publicación en Internet de los metadatos de datos, servicios y esquemas)</li>
+<li>Servicio de acceso a datos y servicios (clientes, visores)</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>Servidores de mapas con proveedores de información</li>
+<li>Servicios de geoprocesamiento (procesos informáticos que manipulan y transforman datos geoespaciales)</li>
+<li>Conexiones a otras IDEs</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="usuarios-y-colaboradores" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="usuarios-y-colaboradores"><span class="header-section-number">1.3.4</span> Usuarios y colaboradores</h3>
+<p>Para que una IDE se pueda considerar como tal, tiene que haber unos usuarios que la usen, en este sentido la tarea de difusión es muy importante. A medida que se incrementa su uso, las empresas empiezan a ver las posibilidades comerciales y a implicarse en el proyecto, acelerando así el crecimiento de la IDE.</p>
+<p>Una comunidad IDE está integrada por varios actores como: - Productores de datos - Proveedores de servicios - Usuarios - Desarrolladores - Investigadores</p>
+<p>Cuanto más abierta y colaborativa sea la comunidad mayor calidad tendrá la IDE. La idea es que incluya organizaciones públicas, privadas, universidades y particulares. Por el momento esta comunidad está formada principalmente por administraciones públicas.</p>
+</section>
+<section id="estándares" class="level3" data-number="1.3.5">
+<h3 data-number="1.3.5" class="anchored" data-anchor-id="estándares"><span class="header-section-number">1.3.5</span> Estándares</h3>
+<p>El uso de estándares es fundamental para garantizar la interoperabilidad entre diferentes sistemas y componentes de una IDE. Estos incluyen:</p>
+<ol type="1">
+<li><strong>Estándares para metadatos</strong>: ISO 19115, ISO 19119</li>
+<li><strong>Estándares para servicios web</strong>: WMS, WFS, WCS, CSW</li>
+<li><strong>Estándares para formatos de datos</strong>: GML, KML, GeoJSON</li>
+<li><strong>Estándares para visualización</strong>: SLD, SE</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="diagram.png" class="img-fluid figure-img" width="532"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset" data-group="IDEs y FAIR">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">IDEs y principios FAIR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Importancia de los metadatos:</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Servicios</a></li></ul>
+<div class="tab-content" data-group="IDEs y FAIR">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Los principios FAIR establecen criterios para que los datos sean encontrables, accesibles, interoperables y reutilizables. Las IDEs cumplen con estos principios de la siguiente manera:</p>
+<ul>
+<li><p>Findable (Encontrables): Publican catálogos de datos espaciales con metadatos normalizados (ISO 19115, Dublin Core), permitiendo su descubrimiento mediante motores de búsqueda.</p></li>
+<li><p>Accessible (Accesibles): Proporcionan servicios web (WMS, WFS, WCS) que permiten la visualización y descarga de datos sin restricciones innecesarias, usando protocolos estándar (OGC, INSPIRE).</p></li>
+<li><p>Interoperable (Interoperables): Utilizan formatos abiertos y estándares definidos por el OGC y normativas como INSPIRE, garantizando compatibilidad entre sistemas.</p></li>
+<li><p>Reusable (Reutilizables): Mantienen metadatos completos que describen el origen, calidad y estructura de los datos, además de garantizar licencias claras para su reutilización.</p></li>
+</ul>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>En el contexto de las IDEs, los <strong>metadatos</strong> siguen estándares como ISO 19115, ISO 19139 y Dublin Core, asegurando su compatibilidad con iniciativas como INSPIRE en Europa.</p>
+<ul>
+<li><p>Los metadatos juegan un papel clave en la implementación de los principios FAIR dentro de las IDEs:</p></li>
+<li><p>Findable: Permiten indexar y catalogar los datos en geoportales y buscadores.</p></li>
+<li><p>Accessible: Proporcionan información sobre las condiciones de acceso y uso de los datos.</p></li>
+<li><p>Interoperable: Describen los estándares utilizados, facilitando su integración en distintos sistemas.</p></li>
+<li><p>Reusable: Documentan la procedencia, calidad y restricciones de uso de los datos.</p></li>
+</ul>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Los <strong>servicios</strong> de una IDE apoyan los principios FAIR de la siguiente manera:</p>
+<ul>
+<li><p>Ofrecen catálogos y metadatos bien estructurados, además de identificadores persistentes (DOI, PURLs) para localizar los datos fácilmente.</p></li>
+<li><p>Facilitan el acceso a los datos mediante repositorios abiertos y protocolos estándar (HTTPS, APIs).</p></li>
+<li><p>Proveen servicios que permiten el uso de formatos estándar y la integración con otras plataformas mediante vocabularios comunes.</p></li>
+<li><p>Gestionan licencias claras, metadatos completos y versiones de datos, permitiendo su uso y reutilización a largo plazo.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="principios-en-que-se-basa-el-desarrollo-de-una-ide" class="level2 page-columns page-full" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="principios-en-que-se-basa-el-desarrollo-de-una-ide"><span class="header-section-number">1.4</span> Principios en que se basa el desarrollo de una IDE</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset" data-group="principios">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Principio 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Principio 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Principio 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Principio 4</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Principio 5</a></li></ul>
+<div class="tab-content" data-group="principios">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p><strong>Datos recogidos una vez y mantenidos en el nivel donde se logra máxima efectividad</strong> - Quien genera, y sobre todo mantiene, un tipo de datos debe encargarse de organizarlos en una base de datos y facilitar el acceso a ellos mediante los servicios adecuados - No deben duplicarse los mismos datos en bases de datos distintas que no aseguren exactamente el mismo nivel de actualización</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p><strong>Debe ser posible combinar IG con total continuidad para un ámbito territorial extenso desde fuentes diversas</strong> - La información geográfica en un ámbito territorial debe basarse en una información geográfica de referencia común, y acorde con la precisión de la información geográfica y en un único Sistema Geodésico de referencia - Debe ser posible superponer capas de información geográfica de distintas temáticas y procedencias</p>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p><strong>Debe ser posible compartir la IG entre usuarios y aplicaciones</strong></p>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<p><strong>Debe ser posible que la información recogida en un nivel o sector sea compartida por los otros</strong></p>
+</div>
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<p><strong>Debe ser fácil descubrir la información geográfica disponible, y en qué condiciones puede conseguirse y usarse</strong> - Metadatos - Calidad - Normas comunes</p>
+</div>
+</div>
+</div>
+<p>En un escenario óptimo, todo usuario de una IDE debería poder descubrir, por ejemplo, qué información geográfica existe en zona concreta del territorio, visualizar esta información y finalmente, si es de su interés, descargarla.</p>
+<p>Para llegar a esta meta, toda IDE que se precie debe:</p>
+<section id="orientar-su-arquitectura-a-servicios-soa" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="orientar-su-arquitectura-a-servicios-soa"><span class="header-section-number">1.4.1</span> Orientar su arquitectura a servicios (SOA)</h3>
+<p>Uno de los principios básicos de toda IDE es la no replicación de datos geográficos ni la creación de grandes bases de datos centralizadas. Una IDE debe fomentar un modelo distribuido donde cada departamento o ente se responsabilice de sus datos y se encargue de describirlos y ponerlos a disposición de los demás.</p>
+</section>
+<section id="implementar-aplicaciones-para-descubrir-visualizar-y-procesar-información" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="implementar-aplicaciones-para-descubrir-visualizar-y-procesar-información"><span class="header-section-number">1.4.2</span> Implementar aplicaciones para descubrir, visualizar y procesar información</h3>
+<p>Entre estas aplicaciones podríamos definir un núcleo presente en toda IDE: - Un catálogo de metadatos - Servidores de mapas - Un conjunto de servicios geográficos</p>
+</section>
+<section id="adoptar-estándares-de-interoperabilidad-geoespacial" class="level3 page-columns page-full" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="adoptar-estándares-de-interoperabilidad-geoespacial"><span class="header-section-number">1.4.3</span> Adoptar estándares de interoperabilidad geoespacial</h3>
+<div class="cell column-screen">
+
+</div>
+<p>Para la descripción de los metadatos se basa en estándares ISO de la familia 19, dedicada al mundo geospacial. Pero a nivel de interfaces de comunicación entre servidores y entre clientes (ej. Un navegador web) y servidores existe un consorcio llamado OpenGeospatial (OGC) encargado de definir las especificaciones utilizadas.</p>
+<p>Podríamos decir que el papel que juega el consorcio W3C en cuanto a la estandarización de la World Wide Web (WWW) es parecido al de OGC dentro del mundo geoespacial.</p>
+</section>
+</section>
+<section id="la-utilidad-de-las-ide-y-sus-ventajas" class="level2 page-columns page-full" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="la-utilidad-de-las-ide-y-sus-ventajas"><span class="header-section-number">1.5</span> La utilidad de las IDE y sus ventajas</h2>
+<p>Cuando un usuario quiere acceder a información geográfica se puede encontrar con una situación caótica, al no saber dónde ir a buscarla. A nivel de cooperación entre administraciones y empresas, la situación es también muy compleja, a causa del gran número de contactos que hay que realizar para obtener estos datos y los permisos para utilizarlos.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Escenario con IDE
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En un entorno IDE todo es más sencillo. Gracias a la catalogación de los datos y mediante los servidores de catálogo los usuarios pueden localizar y acceder a la información geográfica existente. La IDE se encarga también de establecer acuerdos con las administraciones con el objetivo que estas permitan la difusión de su información mediante un servicio de <em>webmapping</em>.</p>
+</div>
+</div>
+<p>Ambos servicios (servidor de catálogo y webmapping) tienen que ser accesibles a través de un único portal web.</p>
+<p>El uso de las IDE mejora considerablemente la dinámica del sector de la geoinformación. Otras ventajas son:</p>
+
+<div class="no-row-height column-margin column-container"><div class="cell">
+
+</div></div><ul>
+<li>Facilita la toma de decisiones</li>
+<li>Reduce esfuerzos y costes</li>
+<li>Proporciona mejores datos y más actualizados</li>
+<li>Apoya la creación de nuevas oportunidades de negocio</li>
+</ul>
+<p>Hay que tener presente que una IDE no se tiene que ver sólo desde la vertiente tecnológica sino que existe también una vertiente social, en que los usuarios (el sector público, el privado y la población) tienen que dar su opinión, a partir de la cual se podrán determinar las estrategias a seguir.</p>
+<p>En el proceso de implantación de una IDE también hay que superar obstáculos:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Técnicos</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Económicos</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Socio-culturales</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">Políticos-legales</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<ul>
+<li>No disponibilidad de datos</li>
+<li>Falta de estándares</li>
+<li>Metadatos incompletos</li>
+<li>Limitaciones en redes de comunicación y banda ancha</li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<ul>
+<li>Coste de implementación</li>
+<li>Financiación sostenible</li>
+<li>Modelos de negocio</li>
+</ul>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<ul>
+<li>Conocimiento técnico</li>
+<li>Educación</li>
+<li>Preocupaciones de seguridad</li>
+<li>Restricciones en libertad de acceso</li>
+</ul>
+</div>
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<ul>
+<li>Datos sensibles</li>
+<li>Propiedad intelectual</li>
+<li>Falta de marcos legales</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Las IDE, además de mantener vías de cooperación y relaciones con el sector público y privado de su región, tienen que hacerlo también tanto con las IDE de su nivel como con las de otros niveles.</p>
+</section>
+<section id="tareas-que-permite-una-ide" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="tareas-que-permite-una-ide"><span class="header-section-number">1.6</span> Tareas que permite una IDE</h2>
+<p>Una IDE bien implementada permite realizar diversas tareas fundamentales:</p>
+<ol type="1">
+<li><p><strong>Buscar</strong> la información disponible por:</p>
+<ul>
+<li>Zona geográfica</li>
+<li>Formato</li>
+<li>Año de producción</li>
+<li>Productor</li>
+<li>Disponibilidad de servicios</li>
+<li>Etc.</li>
+</ul></li>
+<li><p><strong>Visualizar y superponer</strong> mapas, ortofotos, y datos geográficos de diferentes:</p>
+<ul>
+<li>Organismos</li>
+<li>Formatos</li>
+<li>Sistemas de referencia</li>
+<li>Etc.</li>
+</ul></li>
+<li><p><strong>Localizar</strong> entidades geográficas por su nombre y ver su ubicación</p></li>
+<li><p><strong>Analizar</strong> datos mediante operaciones básicas:</p>
+<ul>
+<li>Cálculo de perfiles</li>
+<li>Análisis de superficies</li>
+<li>Etc.</li>
+</ul></li>
+<li><p><strong>Transformar</strong> de un modelo de datos a otro diferente, si ambos están descritos</p></li>
+<li><p><strong>Descargar</strong> los datos para análisis más complejos con un SIG</p></li>
+</ol>
+</section>
+<section id="niveles-de-desarrollo-de-una-ide" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="niveles-de-desarrollo-de-una-ide"><span class="header-section-number">1.7</span> Niveles de desarrollo de una IDE</h2>
+<p>Tenemos que pensar que una IDE conlleva un factor multi-escalar en su implementación, esta puede ser implementada a nivel europeo, nivel estatal, nivel regional e incluso a nivel municipal. Cada nivel tiene la responsabilidad de interoperar con el resto de niveles.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="diagram2.png" class="img-fluid figure-img" style="width:40.0%"></p>
+<figcaption>Jerarquía de niveles IDE</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Ejemplos de niveles de desarrollo de una IDE:</p>
+<ul>
+<li><strong>Global</strong>: GSDI (Global Spatial Data Infrastructure) - <a href="http://gsdiassociation.org/" class="uri">http://gsdiassociation.org/</a></li>
+<li><strong>Europeo</strong>: INSPIRE (INfraestructure for SPatial InfoRmation in Europe) - <a href="http://inspire-geoportal.ec.europa.eu/" class="uri">http://inspire-geoportal.ec.europa.eu/</a></li>
+<li><strong>Nacional</strong>: IDEE (Infraestructura de Datos Espaciales de España) - <a href="http://idee.es/" class="uri">http://idee.es/</a></li>
+<li><strong>Regional</strong>: IDEC (Infraestructura de Dades Espacials de Catalunya) - <a href="http://www.ide.cat" class="uri">http://www.ide.cat</a></li>
+<li><strong>Local</strong>: Barcelona - <a href="https://w133.bcn.cat/geoportalbcn/GeoPortal.aspx?lang=es" class="uri">https://w133.bcn.cat/geoportalbcn/GeoPortal.aspx?lang=es</a></li>
+</ul>
+</section>
+<section id="futuro-de-las-ides" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Futuro de las IDEs</h1>
+<p>La evolución de las IDEs puede analizarse en distintas generaciones:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Evolución de las IDEs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>1ª Generación</strong>: Centrada en los datos espaciales, su publicación, armonización y firma de acuerdos institucionales y definir políticas para compartir información.</p>
+<p><strong>2ª Generación</strong>: Enfocada en la interoperabilidad. Una vez que los datos ya están disponibles se enfocan en las aplicaciones (geoportales, visores, etc.) y en los servicios (WMS, WFS, WPS, descarga de datos, análisis, etc).</p>
+<p><strong>3ª Generación</strong>: Actualmente en definición, con potencial de integración con tecnologías emergentes.</p>
+</div>
+</div>
+<p>Hoy en día, las IDEs están impulsadas por el movimiento de <strong>datos abiertos</strong> y su papel en el desarrollo de <strong>ciudades inteligentes</strong>.</p>
+<p>Desde mediados de los 2000 se habla de las <strong>IDE semánticas</strong> (web semántica, linked data). Más allá del ámbito académico y algunos estudios, han pasado 15 años y no existe una implementación práctica generalizada.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Reconocimiento y atribución">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Reconocimiento y atribución</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./02_inspire.html" class="pagination-link" aria-label="INSPIRE">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">INSPIRE</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

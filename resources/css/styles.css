@@ -1,0 +1,16 @@
+/* css styles */
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+$font-family-monospace: "Ubuntu Mono";
+
+.book .contents {
+  color: black;
+}
+
+p {
+  margin-bottom: 20pt;
+  text-indent: 0cm;       /* Sangría de 1 cm */
+  line-height: 1.5;       /* Interlineado ligeramente mayor */
+
+}
