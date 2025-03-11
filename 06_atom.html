@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>8&nbsp; Servicio de descargas INSPIRE</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01_Introducción.html" rel="next">
+<link href="./07_gml.html" rel="next">
+<link href="./06_wfs.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Reconocimiento y atribución</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06_atom.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Servicio de descargas INSPIRE</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -103,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reconocimiento y atribución</span></a>
   </div>
 </li>
@@ -151,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_atom.html" class="sidebar-item-text sidebar-link">
+  <a href="./06_atom.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Servicio de descargas INSPIRE</span></span></a>
   </div>
 </li>
@@ -195,52 +196,64 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#reconocimiento-y-atribución" id="toc-reconocimiento-y-atribución" class="nav-link active" data-scroll-target="#reconocimiento-y-atribución">Reconocimiento y atribución</a></li>
+  <li><a href="#ventajas-del-servicio-atom" id="toc-ventajas-del-servicio-atom" class="nav-link active" data-scroll-target="#ventajas-del-servicio-atom"><span class="header-section-number">8.0.1</span> Ventajas del servicio ATOM</a></li>
+  <li><a href="#ejemplos-de-servicios-atom" id="toc-ejemplos-de-servicios-atom" class="nav-link" data-scroll-target="#ejemplos-de-servicios-atom"><span class="header-section-number">8.0.2</span> Ejemplos de servicios ATOM</a></li>
+  <li><a href="#herramientas-relacionadas" id="toc-herramientas-relacionadas" class="nav-link" data-scroll-target="#herramientas-relacionadas"><span class="header-section-number">8.0.3</span> Herramientas relacionadas</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Servicio de descargas INSPIRE</span></h1>
+</div>
 
 
 
-<section id="reconocimiento-y-atribución" class="level1 unnumbered">
-<h1 class="unnumbered">Reconocimiento y atribución</h1>
-<p>Los materiales de este tema se han adaptado parcialmente del trabajo de:</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>El servicio de descargas INSPIRE basado en <a href="https://es.wikipedia.org/wiki/Atom_(formato_de_redifusi%C3%B3n)"><strong>ATOM</strong></a> permite la publicación de información mediante fuentes (<em>feeds</em>) en formato XML, facilitando la actualización y búsqueda de datos espaciales.</p>
+<p>La guía técnica recomienda el uso del estándar <a href="https://www.opensearch.org/">OpenSearch</a> para estructurar las operaciones de búsqueda de forma interoperable y compatible con los principales navegadores.</p>
+<p>Para mejorar la organización y accesibilidad, se establecen dos niveles de acceso:</p>
+<ol type="1">
+<li><p><strong>Nivel superior:</strong> Contiene los <em>Dataset feeds</em> con la lista de productos.</p></li>
+<li><p><strong>Nivel secundario:</strong> Contiene los enlaces de descarga de los conjuntos de datos.</p></li>
+</ol>
+<section id="ventajas-del-servicio-atom" class="level3" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="ventajas-del-servicio-atom"><span class="header-section-number">8.0.1</span> Ventajas del servicio ATOM</h3>
 <ul>
-<li>Wladimir Szczerban (alias Bolo) <span class="citation" data-cites="bolosig">@bolosig</span>, <a href="http://maptiler.com">MapTiler</a> (Departamento de Geografía UAB)</li>
-<li>Victor Pascual Ayats <span class="citation" data-cites="sfggeogis">@sfggeogis</span>, <a href="http://betaportal.icgc.cat">geostarter</a> (ICGC)</li>
-<li>Ignacio Ferrero (Departamento de Geografía UAB)</li>
+<li><p>Implementación más sencilla que los servicios WFS.</p></li>
+<li><p>Menor consumo de recursos.</p></li>
+<li><p>No requiere software especializado.</p></li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled" title="Uso de estos materiales:">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Uso de estos materiales:
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>Condiciones de reutilización:</strong></p>
-<p>Estos materiales están publicados bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES">CreativeCommons (by-sa) 4.0 internacional</a></p>
-<p>Se permite:</p>
+<p><img src="img/atom.png" class="img-fluid" alt="Ejemplo ATOM"> <em>Diagrama ejemplo servicio ATOM - Fuente: Comisión Europea, 2013 (Technical Guidance for the implementation of INSPIRE Download Services)</em><sup><a href="#user-content-fn-02_inspire-1">1</a></sup></p>
+</section>
+<section id="ejemplos-de-servicios-atom" class="level3" data-number="8.0.2">
+<h3 data-number="8.0.2" class="anchored" data-anchor-id="ejemplos-de-servicios-atom"><span class="header-section-number">8.0.2</span> Ejemplos de servicios ATOM</h3>
 <ul>
-<li>Compartir — copiar y redistribuir el material en cualquier medio o formato.</li>
-<li>Adaptar — remezclar, transformar y crear a partir del material para cualquier finalidad, incluso comercial.</li>
+<li><p><a href="https://www.catastro.hacienda.gob.es/webinspire/index.html">Catastro España</a></p></li>
+<li><p><a href="https://inspire.larioja.org/">INSPIRE La Rioja</a></p></li>
+<li><p><a href="https://www.diba.cat/es/web/idebarcelona/serveis-descarrega-atom">IDE Barcelona</a></p></li>
+<li><p><a href="https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas/atom.aspx">Ministerio para la Transición Ecológica</a></p></li>
 </ul>
-<p><strong>Bajo las siguientes condiciones :</strong></p>
+</section>
+<section id="herramientas-relacionadas" class="level3" data-number="8.0.3">
+<h3 data-number="8.0.3" class="anchored" data-anchor-id="herramientas-relacionadas"><span class="header-section-number">8.0.3</span> Herramientas relacionadas</h3>
 <ul>
-<li>Reconocimiento — Debe reconocer adecuadamente la autoría, proporcionar un enlace a la licencia e indicar si se han realizado cambios. Puede hacerlo de cualquier manera razonable, pero no de una manera que sugiera que tiene el apoyo del licenciador o lo recibe por el uso que hace.</li>
-<li>Compartir igual — Si remezcla, transforma o crea a partir del material, deberá difundir sus contribuciones bajo la misma licencia que el original.</li>
-<li>No hay restricciones adicionales — No puede aplicar términos legales o medidas tecnológicas que legalmente restrinjan realizar aquello que la licencia permite.</li>
+<li><a href="https://github.com/sigdeletras/Spanish_Inspire_Catastral_Downloader">Plugin QGIS para descarga de datos catastrales de España</a></li>
 </ul>
-</div>
-</div>
-</div>
 
 
 </section>
@@ -668,10 +681,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./06_wfs.html" class="pagination-link" aria-label="WFS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WFS</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01_Introducción.html" class="pagination-link" aria-label="Introducción a las IDEs">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción a las IDEs</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./07_gml.html" class="pagination-link" aria-label="GML">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GML</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
